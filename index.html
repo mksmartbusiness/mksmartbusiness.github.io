@@ -398,12 +398,16 @@
   /* ── FOOTER ── */
   footer {
     background: #1E3D2A; padding: 16px 80px;
-    display: flex; align-items: center; justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 24px;
   }
   .footer-logo img { height: 150px; width: auto; opacity: 0.9; }
   .footer-tag {
     font-size: 0.7rem; letter-spacing: 0.1em;
     text-transform: uppercase; color: rgba(255,255,255,0.2);
+    text-align: right;
   }
 
   /* ── SCROLL ANIMATIONS ── */
@@ -450,7 +454,7 @@
   }
   .social-link svg { width: 18px; height: 18px; fill: currentColor; }
   .footer-social {
-    display: flex; gap: 12px; align-items: center;
+    display: flex; gap: 12px; align-items: center; justify-content: center;
   }
   .footer-social-link {
     display: flex; align-items: center; justify-content: center;
