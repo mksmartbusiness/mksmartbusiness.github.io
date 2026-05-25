@@ -408,15 +408,25 @@
     font-size: 0.97rem; color: rgba(255,255,255,0.5);
     font-weight: 300; margin-bottom: 48px; line-height: 1.85;
   }
-  .contact-email {
-    font-family: "Cormorant Garamond", serif; font-size: 1.4rem;
-    color: var(--sage); text-decoration: none; font-weight: 400;
-    letter-spacing: 0.03em;
-    border-bottom: 1px solid rgba(200,216,192,0.3); padding-bottom: 6px;
-    transition: color 0.2s, border-color 0.2s;
-    margin-bottom: 56px; display: block;
+  .contact-phone-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: var(--sage);
+    text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    border-radius: 2px;
+    border: 1px solid rgba(200,216,192,0.4);
+    margin-bottom: 40px;
+    transition: border-color 0.25s, color 0.25s, transform 0.2s;
   }
-  .contact-email:hover { color: var(--sage-mid); border-color: var(--sage-mid); }
+  .contact-phone-btn:hover { border-color: var(--sage-mid); color: var(--sage-mid); transform: translateY(-2px); }
+  .contact-phone-btn svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
   .mantra {
     font-size: 0.72rem; letter-spacing: 0.16em;
     text-transform: uppercase; color: rgba(255,255,255,0.2);
@@ -844,8 +854,11 @@
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
       Send me an email
     </a>
-    <p class="contact-email-label">or reach me directly at</p>
-    <a href="mailto:info@mksmartbusiness.com.au" class="contact-email" onclick="gtag('event', 'click', {'event_category': 'contact', 'event_label': 'email_address_click'});">info@mksmartbusiness.com.au</a>
+    <p class="contact-email-label">or call me directly on</p>
+    <a href="tel:0432148474" class="contact-phone-btn" onclick="gtag('event', 'click', {'event_category': 'contact', 'event_label': 'phone_number_click'});">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      0432 148 474
+    </a>
     <p class="mantra">Operational Clarity &nbsp;&bull;&nbsp; Calm Execution &nbsp;&bull;&nbsp; Seamless Strategic Support</p>
   </a>
   </div>
