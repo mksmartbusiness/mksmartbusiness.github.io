@@ -309,6 +309,14 @@
   #pillars .section-intro { color: rgba(255,255,255,0.55); }
   #pillars .section-eyebrow { color: var(--sage-mid); }
   #pillars .section-eyebrow::before { background: var(--sage-mid); }
+  /* ── NEWSLETTER ARCHIVE ── */
+  #newsletter-archive { background: var(--dark); color: white; position: relative; overflow: hidden; }
+  #newsletter-archive .section-title { color: white; }
+  #newsletter-archive .section-title em { color: var(--sage); }
+  #newsletter-archive .section-intro { color: rgba(200,216,192,0.75); }
+  #newsletter-archive .section-eyebrow { color: var(--sage-mid); }
+  #newsletter-archive .section-eyebrow::before { background: var(--sage-mid); }
+  .newsletter-card:hover { border-color: rgba(200,216,192,0.45) !important; transform: translateY(-2px); }
   .pillars-grid {
     display: grid; grid-template-columns: repeat(3, 1fr);
     gap: 1px; margin-top: 60px; background: rgba(255,255,255,0.06);
@@ -548,6 +556,7 @@
     <li><a href="#pillars">Services</a></li>
     <li><a href="#packages">Packages</a></li>
     <li><a href="#shop">Resources</a></li>
+    <li><a href="#newsletter-archive">Newsletter</a></li>
     <li><a href="#contact">Let&rsquo;s Talk</a></li>
   </ul>
 </nav>
@@ -833,6 +842,57 @@
       </details>
 
     </div>
+
+</section>
+
+<!-- NEWSLETTER ARCHIVE -->
+<section id="newsletter-archive" style="background: var(--dark); position: relative; overflow: hidden; padding: 100px 24px;">
+
+  <svg style="position: absolute; top: -60px; right: -40px; width: 320px; height: 400px; opacity: 0.12; pointer-events: none;" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M200 480 C200 480 80 380 60 260 C40 140 120 60 200 40 C280 60 360 140 340 260 C320 380 200 480 200 480Z" stroke="#C8D8C0" stroke-width="1.5" fill="none"/>
+    <path d="M200 40 C200 40 150 120 160 200 C170 280 200 340 200 480" stroke="#C8D8C0" stroke-width="1" fill="none"/>
+    <path d="M160 200 C160 200 100 180 80 140" stroke="#C8D8C0" stroke-width="1" fill="none"/>
+    <path d="M170 280 C170 280 110 270 90 240" stroke="#C8D8C0" stroke-width="1" fill="none"/>
+    <circle cx="80" cy="138" r="6" stroke="#C8D8C0" stroke-width="0.8" fill="none"/>
+    <circle cx="90" cy="238" r="5" stroke="#C8D8C0" stroke-width="0.8" fill="none"/>
+  </svg>
+
+  <div style="position: relative; z-index: 1; max-width: 960px; margin: 0 auto;">
+    <div class="section-eyebrow">Calm in the Chaos</div>
+    <h2 class="section-title">Catch up on<br><em>past editions.</em></h2>
+    <p class="section-intro" style="margin-bottom: 48px;">A monthly note on operational clarity, calm execution and the real life mental load of running a household and a business. New here? Start at Edition 01.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 36px;">
+
+      <!-- Edition 01 -->
+      <a href="newsletters/Newsletter-Edition-01.pdf" target="_blank" rel="noopener" class="newsletter-card" style="text-decoration: none; background: rgba(200,216,192,0.06); border: 1px solid rgba(200,216,192,0.18); border-radius: 6px; padding: 32px 28px; display: flex; flex-direction: column; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;">
+        <div style="font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage-mid); font-weight: 500; margin-bottom: 10px;">Edition 01 &nbsp;&middot;&nbsp; May 2026</div>
+        <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 300; color: white; margin-bottom: 10px; line-height: 1.1;">Start the week before it starts you.</div>
+        <p style="font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.75; font-weight: 300; flex: 1; margin-bottom: 20px;">The weekly reset habit and the one home rule that stops things falling through the cracks.</p>
+        <div style="font-size: 0.78rem; font-weight: 600; color: var(--sage);">Read the PDF &nbsp;→</div>
+      </a>
+
+      <!-- Edition 02 -->
+      <a href="newsletters/Newsletter-Edition-02.pdf" target="_blank" rel="noopener" class="newsletter-card" style="text-decoration: none; background: rgba(200,216,192,0.06); border: 1px solid rgba(200,216,192,0.18); border-radius: 6px; padding: 32px 28px; display: flex; flex-direction: column; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;">
+        <div style="font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage-mid); font-weight: 500; margin-bottom: 10px;">Edition 02 &nbsp;&middot;&nbsp; June 2026</div>
+        <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 300; color: white; margin-bottom: 10px; line-height: 1.1;">Close the day before it closes you.</div>
+        <p style="font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.75; font-weight: 300; flex: 1; margin-bottom: 20px;">The five minute end of day capture that gets everything out of your head and into one home.</p>
+        <div style="font-size: 0.78rem; font-weight: 600; color: var(--sage);">Read the PDF &nbsp;→</div>
+      </a>
+
+      <!-- Edition 03 -->
+      <a href="newsletters/Newsletter-Edition-03.pdf" target="_blank" rel="noopener" class="newsletter-card" style="text-decoration: none; background: rgba(200,216,192,0.06); border: 1px solid rgba(200,216,192,0.18); border-radius: 6px; padding: 32px 28px; display: flex; flex-direction: column; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;">
+        <div style="font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage-mid); font-weight: 500; margin-bottom: 10px;">Edition 03 &nbsp;&middot;&nbsp; July 2026</div>
+        <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 300; color: white; margin-bottom: 10px; line-height: 1.1;">Reset the week, even when the week has no shape.</div>
+        <p style="font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.75; font-weight: 300; flex: 1; margin-bottom: 20px;">Why the weekly reset matters more, not less, once school holidays take the shape out of the week.</p>
+        <div style="font-size: 0.78rem; font-weight: 600; color: var(--sage);">Read the PDF &nbsp;→</div>
+      </a>
+
+    </div>
+
+    <a href="https://mk-smart-business-solutions-nhvzjs.subscribepage.io" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); text-decoration: none; border-bottom: 1px solid rgba(200,216,192,0.35); padding-bottom: 4px; transition: gap 0.2s;">Subscribe for new editions &nbsp;→</a>
+
+  </div>
 
 </section>
 
